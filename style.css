@@ -4,6 +4,7 @@ margin: 0;
 padding: 0; 
 box-sizing: border-box;
 color: whitesmoke;
+font-family: consolas;
 }
 
 /* set the background image */
@@ -15,22 +16,26 @@ body {
 
 #headerContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(80, 10, 80);
-    font-family: consolas;
-    height: 120px;
+    background: linear-gradient(to right, #63094c, #450034);
+    height: 100px;
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
-
 #headerContainer > h1 {
     font-size: 50px;
 }
-
 #headerContainer > p {
     font-size: 20px;
+}
+#headerContainer > img {
+    margin: 20px;
+}
+#secondPad {
+    transform: rotate(180deg);
 }
 
 #navbar {
@@ -39,30 +44,37 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color:black;
-    height: 45px;
+    height: 47px;
     width: 1200px;
     margin: 0 auto;
 }
 
-#navbar > button {
-    border: none;
-    background-color: #175eca;
+.nav-button { /* primary navbar */
     padding: 10px 10px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    color: white;
+    background-color: #2225ee;
+    border: 2px solid #444;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-weight: bold;
+    width: 105px;
+    height: 43px;
+}
+.nav-button.active { /* currently open page color */
+    background-color: #333;
+}
+.nav-button:hover { /* hover color */
+    background-color: #e02222;
 }
 
-#primary {
+#mainPageBody {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0 auto;
-    background-color: rgb(80, 10, 80);
+    background: linear-gradient(to right, #63094c, #450034);
     width: 1200px;
     height: 900px;
 }
@@ -70,17 +82,37 @@ body {
 #sidebar {
     display: flex;
     flex-direction: column;
-    width: 220px;
+    width: 240px;
     height: 900px;
-
     border-right: 2px solid rgb(0, 0, 0);
 }
-
 #recentArticles {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 5px;
-    width: 220px;
-    border: 2px solid red;
+    width: 240px;
+}
+
+#card {
+    background-color: black;
+    width: 500px;
+    height: 40px;
+    border-top: solid #e02222 2px;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+#primary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 960px;
+    height: 900px;
+}
+#deathmatchPicture {
+    width: 600px;
+    padding: 10px;
 }
