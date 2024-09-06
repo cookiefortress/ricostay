@@ -1,2 +1,2 @@
 # ricostay
-Valve's Ricochet fan page, styled like it's from the Y2K era
+A fan page for Valve's Ricochet, styled like it's from the Y2K era
