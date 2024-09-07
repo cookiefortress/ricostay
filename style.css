@@ -88,7 +88,7 @@ body {
     border-left: solid 2px rgba(99, 9, 76, 0.95);
     border-right: solid 2px black;
 }
-#recentArticles {
+.sidebarSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,14 +97,15 @@ body {
     padding-right: 9px;
     width: 240px;
 }
-#recentArticles > h3 {
+.sidebarSection > h3 {
     border-bottom: solid 2px white;
+    margin-right: 2px;
 }
-#recentArticles > ul {
+.sidebarSection > ul {
     list-style-type: none;
     
 }
-#recentArticles > ul > li {
+.sidebarSection > ul > li {
     padding: 5px;
 }
 
@@ -117,6 +118,10 @@ body {
     padding: 8px;
     font-size: 20px;
 }
+.cardBlankspace { /*this is needed if you want the image+subtext to be on the left. it forces the image to wrap*/
+    width: 400px;
+    height: 50px;
+}
 .linkCard {
     padding: 10px 10px;
     text-decoration: none;
@@ -125,8 +130,13 @@ body {
     border: 2px solid #3f0533;
     border-radius: 9px;
     text-align: center;
-    width: 105px;
-    height: 43px;
+    width: 140px;
+    height: 63px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.linkCard.oneLine {
+    padding: 19px 10px;
 }
 .linkCard:hover { /* hover color */
     background-color: #6c2da0;
@@ -134,21 +144,33 @@ body {
 .picWithSubtext {
     width: 200px;
     border: groove rgb(250, 242, 242) 4px;
-}
-.picSubtext {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 180px;
-    font-size: 12px;
-    background-color: black;
+    float: right;
+    margin-right: 20px;
 }
 .subtext {
     padding: 4px;
     border-left: groove rgb(250, 242, 242) 4px;
     border-right: groove rgb(250, 242, 242) 4px;
     border-bottom: groove rgb(250, 242, 242) 4px;
-    box-shadow: 10px 10px #050505
+    box-shadow: 10px 10px #050505;
+    width: 180px;
+    height: 55px;
+    float: right;
+    background-color: black;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.pictureSub {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    float: right;
+}
+.diffDisplay {
+    display: flex;
+}
+.leftAligned {
+    margin: 15px 0px 0px 15px;
 }
 
 #primary {
@@ -171,6 +193,11 @@ body {
     margin: 10px;
     text-indent: 50px;
 }
+.leftDetails {
+    text-indent: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 .rainbowText {
     font-family: consolas;
     font-size: 17px;
@@ -183,3 +210,8 @@ body {
     75% { color: #e02222; }
     100% { color: rgb(190, 18, 190); }
   }
+
+#links > h3 {
+    border-bottom: solid 2px white;
+    margin-right: 2px;
+}
