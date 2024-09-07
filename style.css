@@ -20,7 +20,6 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, rgba(99, 9, 76, 0.95), rgba(69, 0, 52, 0.95));
-
     height: 100px;
     width: 1200px;
     margin: 0 auto;
@@ -85,16 +84,31 @@ body {
     flex-direction: column;
     width: 240px;
     height: 900px;
-    border-right: 2px solid rgb(0, 0, 0);
+    border-top: solid 2px rgba(99, 9, 76, 0.95);
+    border-left: solid 2px rgba(99, 9, 76, 0.95);
+    border-right: solid 2px black;
 }
 #recentArticles {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 9px;
     width: 240px;
 }
+#recentArticles > h3 {
+    border-bottom: solid 2px white;
+}
+#recentArticles > ul {
+    list-style-type: none;
+    
+}
+#recentArticles > ul > li {
+    padding: 5px;
+}
 
-#card {
+.card {
     background-color: black;
     width: 500px;
     height: 40px;
@@ -102,6 +116,39 @@ body {
     margin-top: 10px;
     padding: 8px;
     font-size: 20px;
+}
+.linkCard {
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #740f77;
+    border: 2px solid #3f0533;
+    border-radius: 9px;
+    text-align: center;
+    width: 105px;
+    height: 43px;
+}
+.linkCard:hover { /* hover color */
+    background-color: #6c2da0;
+}
+.picWithSubtext {
+    width: 200px;
+    border: groove rgb(250, 242, 242) 4px;
+}
+.picSubtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    font-size: 12px;
+    background-color: black;
+}
+.subtext {
+    padding: 4px;
+    border-left: groove rgb(250, 242, 242) 4px;
+    border-right: groove rgb(250, 242, 242) 4px;
+    border-bottom: groove rgb(250, 242, 242) 4px;
+    box-shadow: 10px 10px #050505
 }
 
 #primary {
@@ -122,4 +169,17 @@ body {
 }
 .details {
     margin: 10px;
+    text-indent: 50px;
 }
+.rainbowText {
+    font-family: consolas;
+    font-size: 17px;
+    animation: color-change 1s infinite;
+}
+@keyframes color-change {
+    0% { color: rgb(190, 18, 190); }
+    25% { color: #2225ee; }
+    50% { color: rgb(190, 18, 190); }
+    75% { color: #e02222; }
+    100% { color: rgb(190, 18, 190); }
+  }
