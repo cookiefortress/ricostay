@@ -7,13 +7,14 @@ color: whitesmoke;
 font-family: consolas;
 }
 
-/* set the background image */
+/* set the background image (Ricochet void) */
 body {
     background-image: url('void.png');
     background-size: cover;
     background-position: center;
 }
 
+/* header */
 .headerContainer {
     display: flex;
     flex-direction: row;
@@ -38,6 +39,7 @@ body {
     transform: rotate(180deg);
 }
 
+/* navigation bar */
 .navbar {
     display: flex;
     flex-direction: row;
@@ -48,7 +50,6 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
-
 .nav-button { /* primary navbar */
     padding: 10px 10px;
     text-decoration: none;
@@ -68,6 +69,7 @@ body {
     background-color: #e02222;
 }
 
+/* consists of both the sidebar and content */
 #mainPageBody {
     display: flex;
     flex-direction: row;
@@ -79,6 +81,7 @@ body {
     height: 900px;
 }
 
+/* sidebar */
 #sidebar {
     display: flex;
     flex-direction: column;
@@ -114,7 +117,54 @@ body {
     padding-top: 27px;
 }
 
+/* content */
+#primary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 960px;
+    height: 90px;
+}
+.contentText {
+    margin: 10px;
+    text-indent: 50px;
+}
+.rightAlignedDetails {
+    text-indent: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#triple { /* triple shot frame */
+    width: 200px;
+    border: groove #e02222 4px;
+    margin: 10px 30px;
+    float: right;
+}
 
+/* footer */
+.footer {
+    width: 1200px;
+    height: 120px;
+    background: linear-gradient(to right, rgba(99, 9, 76, 0.95), rgba(69, 0, 52, 0.95));
+    border-top: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+    text-align: center;
+}
+.footer > img {
+    width: fit-content;
+    height: fit-content
+}
+.footerInfo {
+    margin: 5px;
+}
+
+/* GENERIC - "card" for headings and labeling sections */
 .card {
     background-color: black;
     width: 500px;
@@ -124,10 +174,23 @@ body {
     padding: 8px;
     font-size: 20px;
 }
-.cardBlankspace { /*this is needed if you want the image+subtext to be on the left. it forces the image to wrap*/
+.cardBlankspace { /* this is needed if you want the image+subtext to be on the left. it forces the image to wrap */
     width: 400px;
     height: 50px;
 }
+.longCard {
+    background-color: black;
+    width: 960px;
+    height: 40px;
+    border-top: solid #740f77 3px;
+    border-bottom: solid #740f77 3px;
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* GENERIC - sidebar hyperlink buttons */
 .linkCard {
     padding: 10px 10px;
     text-decoration: none;
@@ -141,12 +204,14 @@ body {
     margin-top: 10px;
     margin-left: 45px;
 }
-.linkCard.oneLine {
+.linkCard.oneLine { /* if the card only has one line of text, change the padding */
     padding: 19px 10px;
 }
 .linkCard:hover { /* hover color */
     background-color: #6c2da0;
 }
+
+/* GENERIC - picture with descriptive text design */
 .picWithSubtext {
     width: 200px;
     border: groove rgb(250, 242, 242) 4px;
@@ -172,38 +237,12 @@ body {
     flex-direction: column;
     float: right;
 }
-.diffDisplay {
+.pictureWithSubtextLeftAlignment {
     display: flex;
-}
-.leftAligned {
     margin: 15px 0px 0px 15px;
 }
 
-#primary {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    width: 960px;
-    height: 90px;
-}
-#triple {
-    width: 200px;
-    border: groove #e02222 4px;
-    margin: 10px 30px;
-    float: right;
-}
-.details {
-    margin: 10px;
-    text-indent: 50px;
-}
-.leftDetails {
-    text-indent: 50px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
+/* GENERIC - cool rainbow text */
 .rainbowText {
     font-family: consolas;
     font-size: 17px;
@@ -217,26 +256,20 @@ body {
     100% { color: rgb(190, 18, 190); }
   }
 
-#links > h3 {
-    border-bottom: solid 2px white;
-    margin-right: 2px;
-}
-
-.footer {
-    width: 1200px;
-    height: 120px;
-    background: linear-gradient(to right, rgba(99, 9, 76, 0.95), rgba(69, 0, 52, 0.95));
-    border-top: solid black 2px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 13px;
+  /* Articles page */
+  #articlesContentText {
+    margin-right: 13px;
+  }
+  #articleList {
+    border-collapse: collapse;
+    width: 960px;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  #articleList > th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
     text-align: center;
-}
-.footer > img {
-    width: fit-content;
-    height: fit-content
-}
-.footerInfo {
-    margin: 5px;
-}
+  }
+  tr:hover {background-color: rgb(124, 39, 120);}
