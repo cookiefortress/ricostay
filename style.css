@@ -78,7 +78,7 @@ body {
     margin: 0 auto;
     background: linear-gradient(to right, rgba(99, 9, 76, 0.95), rgba(69, 0, 52, 0.95));
     width: 1200px;
-    height: 900px;
+    min-height: 900px;
 }
 
 /* sidebar */
@@ -86,7 +86,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 240px;
-    height: 900px;
+    min-height: 900px;
     border-top: solid 2px rgba(99, 9, 76, 0.95);
     border-left: solid 2px rgba(99, 9, 76, 0.95);
     border-right: solid 2px black;
@@ -126,7 +126,7 @@ body {
     align-items: flex-start;
     align-content: flex-start;
     width: 960px;
-    height: 90px;
+    min-height: 900px;
 }
 .contentText {
     margin: 10px;
@@ -273,3 +273,38 @@ body {
     text-align: center;
   }
   tr:hover {background-color: rgb(124, 39, 120);}
+
+  /* Gallery page */
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .gallery > a > img {
+    width: 285px;
+    border: groove rgb(212, 23, 23) 4px;
+    margin-left: 23px;
+    margin-top: 20px;
+  }
+  .galleryTextbox {
+    width: 285px;
+    height: 216px;
+    margin-left: 23px;
+    margin-top: 20px;
+    background-color: black;
+    border: groove whitesmoke 4px;
+    padding: 15px;
+  }
+  .galleryDivider {
+    border-bottom: solid black 2px;
+    margin-left: 75px;
+    width: 800px;
+    height: 15px;
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .galleryTextbox.long {
+    padding: 12px;
+  }
