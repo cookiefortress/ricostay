@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricostay</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="ricochetR.png">
 </head>
 
 
 <body>
 
 <!-- HEADER -->
-    <div id="headerContainer">
+    <div class="headerContainer">
         <img src="pad.png" alt="Ricochet jump pad" width="92px">
-            <div id="name">
+            <div class="name">
                 <h1>Ricostay</h1>
                 <p>The ultimate Ricochet hub</p>
             </div>
-        <img src="pad.png" alt="Ricochet jump pad" width="92px" id="secondPad">
+        <img src="pad.png" alt="Ricochet jump pad" width="92px" class="secondPad">
     </div>
 
 <!-- NAVBAR -->
-    <div id="navbar">
-        <a href="#" class="nav-button active">Main Page</a>
+    <div class="navbar">
+        <a href="index.html" class="nav-button active">Main Page</a>
         <img src="powerup.png" alt="Ricochet powerup" width="20px" id="powerup">
-        <a href="#" class="nav-button">Articles</a>
+        <a href="articles.html" class="nav-button">Articles</a>
         <img src="powerup.png" alt="Ricochet powerup" width="20px" id="powerup">
         <a href="#" class="nav-button">Gallery</a>
         <img src="powerup.png" alt="Ricochet powerup" width="20px" id="powerup">
@@ -50,6 +51,12 @@
                 <h3>Useful Links</h3>
                 <a href="https://store.steampowered.com/app/60/Ricochet/" class="linkCard" target="_blank">Ricochet on Steam</a>
                 <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=137883201" class="linkCard oneLine" target="_blank">Moses' Guide</a>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3093628345" class="linkCard oneLine" target="_blank">My Guide</a>
+                <a href="https://steamcharts.com/app/60" class="linkCard" target="_blank">Ricochet on Steamcharts</a>
+                <a href="https://www.reddit.com/r/ricochet/" class="linkCard oneLine" target="_blank">r/Ricochet</a>
+            </div>
+            <div class="sidebarSection">
+                <img src="hecuSoldier.png" class="hecuSoldier">
             </div>
         </div>
 
@@ -114,9 +121,31 @@
             </div>
 
         </div>
+
+<!-- FOOTER -->
+        <div class="footer">
+            <span class="footerInfo">
+            ©2024 Ricostay
+            <br><span class="rainbowText">ricostay.com</span>
+            </span>
+            <div class="stickers">
+                <a href="https://store.steampowered.com/app/60/Ricochet/" target="_blank"><img src="steamSticker.gif"></a>
+                <a href="https://store.steampowered.com/app/70/HalfLife/" target="_blank"><img src="gordonSticker.gif"></a>
+            </div>
+        </div>
         
     </div>
 
 </body>
 
 </html>
+
+<!-- <img src="deathmatchPicture.png" id="deathmatchPicture"> PRODUCES A FADING IMAGE -->
+
+<!-- 
+#deathmatchPicture {
+width: 223px;
+-webkit-mask-image: linear-gradient(to top, black 50%, transparent 70%);
+mask-image: linear-gradient(to top, black 50%, transparent 70%);
+}
+    -->

@@ -14,7 +14,7 @@ body {
     background-position: center;
 }
 
-#headerContainer {
+.headerContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,20 +25,20 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-#headerContainer > h1 {
+.headerContainer > h1 {
     font-size: 50px;
 }
-#headerContainer > p {
+.headerContainer > p {
     font-size: 20px;
 }
-#headerContainer > img {
+.headerContainer > img {
     margin: 20px;
 }
-#secondPad {
+.secondPad {
     transform: rotate(180deg);
 }
 
-#navbar {
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 5px;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-right: 9px;
     width: 240px;
 }
@@ -103,11 +103,17 @@ body {
 }
 .sidebarSection > ul {
     list-style-type: none;
-    
 }
 .sidebarSection > ul > li {
     padding: 5px;
+    font-size: 14px;
 }
+.hecuSoldier {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding-top: 27px;
+}
+
 
 .card {
     background-color: black;
@@ -133,7 +139,7 @@ body {
     width: 140px;
     height: 63px;
     margin-top: 10px;
-    margin-left: 35px;
+    margin-left: 45px;
 }
 .linkCard.oneLine {
     padding: 19px 10px;
@@ -181,7 +187,7 @@ body {
     align-items: flex-start;
     align-content: flex-start;
     width: 960px;
-    height: 900px;
+    height: 90px;
 }
 #triple {
     width: 200px;
@@ -214,4 +220,23 @@ body {
 #links > h3 {
     border-bottom: solid 2px white;
     margin-right: 2px;
+}
+
+.footer {
+    width: 1200px;
+    height: 120px;
+    background: linear-gradient(to right, rgba(99, 9, 76, 0.95), rgba(69, 0, 52, 0.95));
+    border-top: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
+    text-align: center;
+}
+.footer > img {
+    width: fit-content;
+    height: fit-content
+}
+.footerInfo {
+    margin: 5px;
 }
