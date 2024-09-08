@@ -241,6 +241,12 @@ body {
     display: flex;
     margin: 15px 0px 0px 15px;
 }
+.picWithSubtextBigger {
+    width: 300px;
+}
+.subtextBigger {
+    width: 280px;
+}
 
 /* GENERIC - cool rainbow text */
 .rainbowText {
@@ -308,3 +314,43 @@ body {
   .galleryTextbox.long {
     padding: 12px;
   }
+
+/* Info page */
+
+
+
+
+
+
+
+
+/* About page */
+.aboutImage {
+    width: 285px;
+    border: groove #740f77 5px;
+    margin-left: 23px;
+    margin-top: 20px;
+}
+.topicBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 400px;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    border: solid 3px #740f77;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.infoAnchors {
+    text-decoration: none;
+}
+.infoButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
